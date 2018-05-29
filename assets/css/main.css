@@ -2,17 +2,20 @@ body {
     font-family:'Montserrat', sans-serif;
 }
 
-.header{
+header .header-wrapper{
     min-height: 100px;
-    font-size: 0;
     margin: 10px 15px;
+    font-size: 0; /*Account for html inline white space*/
 }
 
-.header-wrapper {
-    border-bottom:2px solid #7d97ad;
+
+header div.container{
+    border-bottom:3px solid #7d97ad;
+    padding-bottom: 25px;
 }
 
-.header-left, .header-right {
+header .header-left, 
+header .header-right {
     width: 50%;
     height: 100%;
     display: inline-block;
@@ -22,18 +25,26 @@ body {
     margin: 0;
 }
 
-.header-left .logo {
+header .header-left .logo {
     min-height: 100px;
 }
 
-.header i {
-    font-size: 8vw;
+header .header-wrapper i {
+    font-size: 5vw;
     color: #02b3e4
 }
 
-.header-right {
+header .header-right {
     text-align: right;
     font-family: 'Montserrat', sans-serif;
+}
+
+header .header-right h1 {
+    font-size: 3.2rem;
+}
+
+section.main {
+    max-width: 1300px;
 }
 
 section.top .intro, 
@@ -42,17 +53,19 @@ section.bottom .showcase {
     margin: 20px auto;
 }
 
+figure.hero,
+figure.hero .overlay{
+    height: 450px;
+    width: 100%;
+}
+
 figure.hero {
     background: no-repeat  100%/100% url('../images/coding.jpg');
-    min-height: 300px;
-    width: 100%;
     position: relative;
     background-size: cover;
 }
 figure.hero .overlay {
     background: linear-gradient(90deg, rgba(255, 240, 255, .2), rgba(2, 179, 228,.5));
-    height: 300px;
-    width: 100%;
     position: absolute;
 }
 
@@ -72,21 +85,27 @@ section.bottom {
 
 article.card {
     display: inline-block;
-    /* max-width: 250px; */
+    width: 48%;
     background-color: white;
     border: none;
     text-align: center;
+    vertical-align: top;
 }
-
+article.card .frontwise{
+    min-height: 232px;
+}
 article.card a{
    display: inline-block;
 }
-article.card .header img{
+article.card header img{
     max-height: 400px;
     width: 100%;
 }
 article.card header img.standard {
     display: none;
+}
+article.card header img.wide {
+    height: 232px
 }
 article.card footer {
     background: initial;
@@ -107,11 +126,34 @@ footer .social-link {
     display: inline-block;
     padding: 30px 20px;
     margin-right: 40px;
+    color: #02b3e4;
 }
 
 /*responsive tablet view */
 @media only screen and (max-width: 991px) {
-     article.card {
+    
+    header div.header-wrapper {
+        border-bottom:2px solid #7d97ad;
+    }
+
+    header .header-wrapper i {
+        font-size: 8vw;
+    }
+    header div.container{
+        border: none;
+        padding-bottom: 10px;
+    }
+
+    header .header-right h1 {
+        font-size: 2.0rem;
+    }
+
+    figure.hero,
+    figure.hero .overlay {
+        height: 300px;
+    }
+     
+    article.card {
         width: 100%;
         max-width: inherit;
         min-height: 280px;
@@ -119,13 +161,14 @@ footer .social-link {
         background-color: aliceblue;
         border-width: 1px;
         padding-top: 25px; 
-     }
+    }
 
-     article.card .sidewise {
-         width: 48%;
-         display: inline-block;
-         vertical-align: top;
-     }
+    article.card .frontwise, 
+    article.card .sidewise {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
 
@@ -176,10 +219,10 @@ footer .social-link {
 
 /*responsive mobile view */
 @media only screen and (max-width: 575px) {
-    .header-right {
+    header .header-right {
         width: 75%;
     }
-    .header-left {
+    header .header-left {
         width: 25%;
         padding-left: 5px;
         padding-top: 10px;
@@ -188,6 +231,8 @@ footer .social-link {
     article.card {
         padding-top: 0;
     }
+
+    article.card .frontwise,
     article.card .sidewise {
         padding: 5px;
         width: 100%   
@@ -204,6 +249,10 @@ footer .social-link {
     
 }
 @media only screen and (max-width: 378px) {
+     
+    header .header-wrapper i {
+        font-size: 12vw;
+    }
 
     article.card { 
         width: 100%;
