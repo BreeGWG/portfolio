@@ -72,82 +72,136 @@ section.bottom {
 
 article.card {
     display: inline-block;
-    max-width: 300px;
-    background-color: aliceblue;
+    /* max-width: 250px; */
+    background-color: white;
+    border: none;
+    text-align: center;
 }
 
-article.card a {
-display: inline-block;
+article.card a{
+   display: inline-block;
 }
-
-article.card img{
+article.card .header img{
     max-height: 400px;
     width: 100%;
+}
+article.card header img.standard {
+    display: none;
 }
 article.card footer {
     background: initial;
 }
 footer  {
-    height: 100px;
+    height: auto;
     width: 100%;
     background: #2d3c49;
     color:white;
 }
 
-/*responsive mobile view */
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-    article.card {
+footer .social {
+    text-align: center;
+}
+
+footer .social-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 20px;
+    margin-right: 40px;
+}
+
+/*responsive tablet view */
+@media only screen and (max-width: 991px) {
+     article.card {
         width: 100%;
         max-width: inherit;
+        min-height: 280px;
+        margin-bottom: 15px;
+        background-color: aliceblue;
+        border-width: 1px;
+        padding-top: 25px; 
+     }
+
+     article.card .sidewise {
+         width: 48%;
+         display: inline-block;
+         vertical-align: top;
+     }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+
+    section.main {
+        max-width: 991px;
     }
-    article.card header {
-        display: inline-block;
+    
+    article.card header a{
+        width: 100%;
+    }
+    article.card header img {
+        width: 100%;
+        min-height: 215px;
+    }
+    
+    article.card:last-child img {
+        /* min-width: 470px; */
     }
 
-    article.card footer,
-    section.title {
-        float: right;
-        max-width: 48%;
+}
+@media only screen and (max-width: 768px) {
+    section.main {
+        max-width: 768px;
+    }
+
+    article.card a {
+        display: inline-block;
+    }
+    article.card header img.standard {
+        display: block;
+        width: 100%;
+    }
+
+    article.card header img.wide {
+       display: none;
+    } 
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    
+    article.card header {
+        display: inline-block;
     }
 
     article.card footer a {
         display: inline;
     }
 }
+
+/*responsive mobile view */
 @media only screen and (max-width: 575px) {
-     .header-right {
+    .header-right {
         width: 75%;
     }
-     .header-left {
+    .header-left {
         width: 25%;
         padding-left: 5px;
         padding-top: 10px;
 
-     }
-     article.card {
-        margin-bottom: 15px;
-     }
-     article.card .sidewise {
-        padding: 5px;
     }
-     article.card a{
+    article.card {
+        padding-top: 0;
+    }
+    article.card .sidewise {
+        padding: 5px;
+        width: 100%   
+    }
+    article.card a{
         display: inline;
     }
-     section.bottom .showcase{
+    section.bottom .showcase{
         text-align: center;
     }
-     footer .social {
-        text-align: center;
+    footer .social-link:last-child {
+        margin-right: 0;
     }
-     footer .social-link {
-         display: inline-block;
-         padding: 30px 20px;
-         margin-right: 40px;
-     }
-     footer .social-link:last-child {
-         margin-right: 0;
-     }
-      
+    
 }
 @media only screen and (max-width: 378px) {
 
@@ -156,4 +210,7 @@ footer  {
         display: block;
     }
 
+    footer .social-link{
+        margin: 0;
+    } 
 }
