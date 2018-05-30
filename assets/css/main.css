@@ -1,22 +1,23 @@
-html, body {
-    font-family:'Montserrat', sans-serif;
+html,
+body {
+    font-family: "Montserrat", sans-serif;
     height: auto;
     min-height: 1450px;
 }
-
-header .header-wrapper{
+/* Start  Header */
+header .header-wrapper {
     min-height: 100px;
     margin: 10px 15px;
-    font-size: 0; /*Account for html inline white space*/
+    font-size: 0;
+    /*Account for html inline white space*/
 }
 
-
-header div.container{
-    border-bottom:3px solid #7d97ad;
+header div.container {
+    border-bottom: 3px solid #7d97ad;
     padding-bottom: 25px;
 }
 
-header .header-left, 
+header .header-left,
 header .header-right {
     width: 50%;
     height: 100%;
@@ -38,38 +39,38 @@ header .header-wrapper i {
 
 header .header-right {
     text-align: right;
-    font-family: 'Montserrat', sans-serif;
 }
 
 header .header-right h1 {
     font-size: 3.2rem;
 }
+/* End Header */
 
+/* Start Main Section */
 section.main {
     max-width: 1280px;
 }
 
-section.top .intro, 
+section.top .intro,
 section.bottom .showcase {
-    width:90%;
+    width: 90%;
     margin: 20px auto;
 }
 
-
-
 figure.hero,
-figure.hero .overlay{
+figure.hero .overlay {
     height: 450px;
     width: 100%;
 }
 
 figure.hero {
-    background: no-repeat  100%/100% url('../images/coding.jpg');
+    background: no-repeat 100%/100% url('../images/coding.jpg');
     position: relative;
     background-size: cover;
 }
+
 figure.hero .overlay {
-    background: linear-gradient(90deg, rgba(255, 240, 255, .2), rgba(2, 179, 228,.5));
+    background: linear-gradient(90deg, rgba(255, 240, 255, .2), rgba(2, 179, 228, .5));
     position: absolute;
 }
 
@@ -83,8 +84,7 @@ figure.hero figcaption {
 }
 
 section.bottom {
-   color: #7d97ad;
-   font-family: 'Montserrat', sans-serif; 
+    color: #7d97ad;
 }
 
 article.card {
@@ -97,6 +97,7 @@ article.card {
     vertical-align: top;
     margin-right: 33px;
 }
+
 article.card:last-child {
     margin-right: 0;
 }
@@ -104,37 +105,47 @@ article.card:last-child {
 article.card .frontwise {
     min-height: 232px;
 }
+
 article.card .project-title {
-    color:#2d3c46;
+    color: #2d3c46;
     font-weight: bolder;
 }
 
 article.card .project-title p {
     font-size: 12px;
 }
-article.card a{
-   display: inline-block;
-   text-decoration: none;
-   color: #2d3c46;
+
+article.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #2d3c46;
 }
-article.card header img{
+
+article.card header img {
     max-height: 400px;
     width: 100%;
 }
+
 article.card header img.standard {
     display: none;
 }
+
 article.card header img.wide {
     height: 232px
 }
+
 article.card footer {
     background: initial;
 }
-footer  {
+
+/* End Main Section */
+
+/* Start Footer */
+footer {
     height: auto;
     width: 100%;
     background: #2d3c49;
-    color:white;
+    color: white;
 }
 
 footer .social {
@@ -148,7 +159,9 @@ footer .social-link {
     margin-right: 40px;
     color: #02b3e4;
 }
-/* responsive */
+/* End Footer */
+
+/* Start Responsive */
 @media only screen and (min-width: 1246px) {
     footer {
         position: fixed;
@@ -156,49 +169,43 @@ footer .social-link {
         padding: 0 20px;
         height: 80px;
     }
-
     footer .social figcaption {
         display: none;
     }
-
     article.card footer {
         position: static;
     }
 }
+
 @media only screen and (max-width: 1245px) {
     section.bottom .showcase {
         text-align: center;
     }
-
     header .header-right h1 {
         text-align: center;
     }
 }
-/*responsive tablet view */
-@media only screen and (max-width: 991px) {
-    
-    header div.header-wrapper {
-        border-bottom:2px solid #7d97ad;
-    }
 
+/* Tablet View */
+@media only screen and (max-width: 991px) {
+    header div.header-wrapper {
+        border-bottom: 2px solid #7d97ad;
+    }
     header .header-wrapper i {
         font-size: 8vw;
     }
-    header div.container{
+    header div.container {
         border: none;
         padding-bottom: 10px;
     }
-
     header .header-right h1 {
         font-size: 2.0rem;
         text-align: right;
     }
-
     figure.hero,
     figure.hero .overlay {
         height: 300px;
     }
-     
     article.card {
         width: 100%;
         max-width: inherit;
@@ -206,40 +213,33 @@ footer .social-link {
         margin-bottom: 15px;
         background-color: aliceblue;
         border-width: 1px;
-        padding-top: 25px; 
+        padding-top: 25px;
     }
-
-    article.card .frontwise, 
+    article.card .frontwise,
     article.card .sidewise {
         width: 48%;
         display: inline-block;
         vertical-align: top;
     }
 }
-@media only screen and (min-width: 769px) and (max-width: 991px) {
 
+@media only screen and (min-width: 769px) and (max-width: 991px) {
     section.main {
         max-width: 991px;
     }
-    
-    article.card header a{
+    article.card header a {
         width: 100%;
     }
     article.card header img {
         width: 100%;
         min-height: 215px;
     }
-    
-    article.card:last-child img {
-        /* min-width: 470px; */
-    }
-
 }
+
 @media only screen and (max-width: 768px) {
     section.main {
         max-width: 768px;
     }
-
     article.card a {
         display: inline-block;
     }
@@ -247,17 +247,15 @@ footer .social-link {
         display: block;
         width: 100%;
     }
-
     article.card header img.wide {
-       display: none;
-    } 
+        display: none;
+    }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-    
     article.card header {
         display: inline-block;
     }
-
     article.card footer a {
         display: inline;
     }
@@ -272,41 +270,38 @@ footer .social-link {
         width: 25%;
         padding-left: 5px;
         padding-top: 10px;
-
     }
     article.card {
         padding-top: 0;
         min-width: inherit;
     }
-
     article.card .frontwise,
     article.card .sidewise {
         padding: 5px;
-        width: 100%   
+        width: 100%
     }
-    article.card a{
+    article.card a {
         display: inline;
     }
-    section.bottom .showcase{
+    section.bottom .showcase {
         text-align: center;
     }
     footer .social-link:last-child {
         margin-right: 0;
     }
-    
 }
+
 @media only screen and (max-width: 378px) {
-     
     header .header-wrapper i {
         font-size: 12vw;
     }
-
-    article.card { 
+    article.card {
         width: 100%;
         display: block;
     }
-
-    footer .social-link{
+    footer .social-link {
         margin: 0;
-    } 
+    }
+
 }
+/* End Responsive */
