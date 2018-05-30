@@ -9,7 +9,7 @@ https://www.pexels.com/photo/code-coding-computer-data-574073/
 https://pixabay.com/en/cat-colorful-feline-head-lion-1298141/
 
 - Home Page dark-grid image: 
-https://www.bigstockphoto.com/search/perspective-background/
+https://www.bigstockphoto.com/image-107001446/stock-vector-pixel-art-spaceship-isolated-vector-set
 
 - Home Page video-game image:
 https://www.bigstockphoto.com/search/retro-video-game/
