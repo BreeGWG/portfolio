@@ -1,5 +1,7 @@
-body {
+html, body {
     font-family:'Montserrat', sans-serif;
+    height: auto;
+    min-height: 1450px;
 }
 
 header .header-wrapper{
@@ -44,7 +46,7 @@ header .header-right h1 {
 }
 
 section.main {
-    max-width: 1300px;
+    max-width: 1280px;
 }
 
 section.top .intro, 
@@ -52,6 +54,8 @@ section.bottom .showcase {
     width:90%;
     margin: 20px auto;
 }
+
+
 
 figure.hero,
 figure.hero .overlay{
@@ -85,17 +89,33 @@ section.bottom {
 
 article.card {
     display: inline-block;
-    width: 48%;
+    width: 31%;
+    min-width: 340px;
     background-color: white;
     border: none;
     text-align: center;
     vertical-align: top;
+    margin-right: 33px;
 }
-article.card .frontwise{
+article.card:last-child {
+    margin-right: 0;
+}
+
+article.card .frontwise {
     min-height: 232px;
+}
+article.card .project-title {
+    color:#2d3c46;
+    font-weight: bolder;
+}
+
+article.card .project-title p {
+    font-size: 12px;
 }
 article.card a{
    display: inline-block;
+   text-decoration: none;
+   color: #2d3c46;
 }
 article.card header img{
     max-height: 400px;
@@ -128,7 +148,32 @@ footer .social-link {
     margin-right: 40px;
     color: #02b3e4;
 }
+/* responsive */
+@media only screen and (min-width: 1246px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        padding: 0 20px;
+        height: 80px;
+    }
 
+    footer .social figcaption {
+        display: none;
+    }
+
+    article.card footer {
+        position: static;
+    }
+}
+@media only screen and (max-width: 1245px) {
+    section.bottom .showcase {
+        text-align: center;
+    }
+
+    header .header-right h1 {
+        text-align: center;
+    }
+}
 /*responsive tablet view */
 @media only screen and (max-width: 991px) {
     
@@ -146,6 +191,7 @@ footer .social-link {
 
     header .header-right h1 {
         font-size: 2.0rem;
+        text-align: right;
     }
 
     figure.hero,
@@ -230,6 +276,7 @@ footer .social-link {
     }
     article.card {
         padding-top: 0;
+        min-width: inherit;
     }
 
     article.card .frontwise,
