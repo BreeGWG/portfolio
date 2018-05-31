@@ -150,11 +150,11 @@ footer {
     color: white;
 }
 
-footer .social {
+.social {
     text-align: center;
 }
 
-footer .social-link {
+.social-link {
     text-decoration: none;
     display: inline-block;
     padding: 30px 20px;
@@ -171,7 +171,7 @@ footer .social-link {
         padding: 0 20px;
         height: 80px;
     }
-    footer .social figcaption {
+    .social figcaption {
         display: none;
     }
     .card footer {
@@ -288,7 +288,7 @@ footer .social-link {
     .bottom .showcase {
         text-align: center;
     }
-    footer .social-link:last-child {
+    .social-link:last-child {
         margin-right: 0;
     }
 }
@@ -301,6 +301,7 @@ footer .social-link {
     .header-right h1 {
         font-size: x-large;
     }
+    
     .header-right h5 {
         font-size: large;
     }
@@ -309,7 +310,8 @@ footer .social-link {
         width: 100%;
         display: block;
     }
-    footer .social-link {
+
+    .social-link {
         margin: 0;
     }
 
