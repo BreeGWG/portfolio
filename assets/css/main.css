@@ -2,7 +2,7 @@ html,
 body {
     font-family: "Montserrat", sans-serif;
     height: auto;
-    min-height: 1450px;
+    min-height: 1475px;
 }
 /* Start  Header */
 .header-wrapper {
@@ -53,30 +53,30 @@ main {
     max-width: 1280px;
 }
 
-section.top .intro,
-section.bottom .showcase {
+.top .intro,
+.bottom .showcase {
     width: 90%;
     margin: 20px auto;
 }
 
-figure.hero,
-figure.hero .overlay {
+.hero,
+.hero .overlay {
     height: 450px;
     width: 100%;
 }
 
-figure.hero {
+.hero {
     background: no-repeat 100%/100% url('../images/coding.jpg');
     position: relative;
     background-size: cover;
 }
 
-figure.hero .overlay {
+.hero .overlay {
     background: linear-gradient(90deg, rgba(255, 240, 255, .2), rgba(2, 179, 228, .5));
     position: absolute;
 }
 
-figure.hero figcaption {
+.hero figcaption {
     position: absolute;
     top: 33%;
     left: 25%;
@@ -85,11 +85,11 @@ figure.hero figcaption {
     text-shadow: 1px 2px #000;
 }
 
-section.bottom {
+.bottom {
     color: #7d97ad;
 }
 
-article.card {
+.card {
     display: inline-block;
     width: 31%;
     min-width: 340px;
@@ -100,43 +100,43 @@ article.card {
     margin-right: 33px;
 }
 
-article.card:last-child {
+.card:last-child {
     margin-right: 0;
 }
 
-article.card .frontwise {
+.card .frontwise {
     min-height: 232px;
 }
 
-article.card .project-title {
+.card .project-title {
     color: #2d3c46;
     font-weight: bolder;
 }
 
-article.card .project-title p {
+.card .project-title p {
     font-size: 12px;
 }
 
-article.card a {
+.card a {
     display: inline-block;
     text-decoration: none;
     color: #2d3c46;
 }
 
-article.card header img {
+.card header img {
     max-height: 400px;
     width: 100%;
 }
 
-article.card header img.standard {
+.card header img.standard {
     display: none;
 }
 
-article.card header img.wide {
+.card header img.wide {
     height: 232px
 }
 
-article.card footer {
+.card footer {
     background: initial;
 }
 
@@ -174,13 +174,13 @@ footer .social-link {
     footer .social figcaption {
         display: none;
     }
-    article.card footer {
+    .card footer {
         position: static;
     }
 }
 
 @media only screen and (max-width: 1245px) {
-    section.bottom .showcase {
+    .bottom .showcase {
         text-align: center;
     }
     .header-wrapper i {
@@ -204,11 +204,11 @@ footer .social-link {
         font-size: 2.0rem;
         text-align: right;
     }
-    figure.hero,
-    figure.hero .overlay {
+    .hero,
+    .hero .overlay {
         height: 300px;
     }
-    article.card {
+    .card {
         width: 100%;
         max-width: inherit;
         min-height: 280px;
@@ -217,8 +217,8 @@ footer .social-link {
         border-width: 1px;
         padding-top: 25px;
     }
-    article.card .frontwise,
-    article.card .sidewise {
+    .card .frontwise,
+    .card .sidewise {
         width: 48%;
         display: inline-block;
         vertical-align: top;
@@ -229,10 +229,10 @@ footer .social-link {
     main {
         max-width: 991px;
     }
-    article.card header a {
+    .card header a {
         width: 100%;
     }
-    article.card header img {
+    .card header img {
         width: 100%;
         min-height: 215px;
     }
@@ -242,23 +242,23 @@ footer .social-link {
     main {
         max-width: 768px;
     }
-    article.card a {
+    .card a {
         display: inline-block;
     }
-    article.card header img.standard {
+    .card header img.standard {
         display: block;
         width: 100%;
     }
-    article.card header img.wide {
+    .card header img.wide {
         display: none;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-    article.card header {
+    .card header {
         display: inline-block;
     }
-    article.card footer a {
+    .card footer a {
         display: inline;
     }
 }
@@ -273,19 +273,19 @@ footer .social-link {
         padding-left: 5px;
         padding-top: 1px;
     }
-    article.card {
+    .card {
         padding-top: 0;
         min-width: inherit;
     }
-    article.card .frontwise,
-    article.card .sidewise {
+    .card .frontwise,
+    .card .sidewise {
         padding: 5px;
         width: 100%
     }
-    article.card a {
+    .card a {
         display: inline;
     }
-    section.bottom .showcase {
+    .bottom .showcase {
         text-align: center;
     }
     footer .social-link:last-child {
@@ -305,7 +305,7 @@ footer .social-link {
         font-size: large;
     }
     
-    article.card {
+    .card {
         width: 100%;
         display: block;
     }
