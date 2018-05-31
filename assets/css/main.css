@@ -12,9 +12,10 @@ header .header-wrapper {
     /*Account for html inline white space*/
 }
 
-header div.container {
+header div.header-frame {
     border-bottom: 3px solid #7d97ad;
     padding-bottom: 25px;
+    width: 100%;
 }
 
 header .header-left,
@@ -47,7 +48,7 @@ header .header-right h1 {
 /* End Header */
 
 /* Start Main Section */
-section.main {
+main {
     max-width: 1280px;
 }
 
@@ -181,9 +182,9 @@ footer .social-link {
     section.bottom .showcase {
         text-align: center;
     }
-    header .header-right h1 {
+    /* header .header-right h1 {
         text-align: center;
-    }
+    } */
 }
 
 /* Tablet View */
@@ -194,7 +195,7 @@ footer .social-link {
     header .header-wrapper i {
         font-size: 8vw;
     }
-    header div.container {
+    header div.header-frame {
         border: none;
         padding-bottom: 10px;
     }
@@ -224,7 +225,7 @@ footer .social-link {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-    section.main {
+    main {
         max-width: 991px;
     }
     article.card header a {
@@ -237,7 +238,7 @@ footer .social-link {
 }
 
 @media only screen and (max-width: 768px) {
-    section.main {
+    main {
         max-width: 768px;
     }
     article.card a {
@@ -292,6 +293,11 @@ footer .social-link {
 }
 
 @media only screen and (max-width: 378px) {
+    header .header-wrapper {
+        margin: 10px 0;
+        font-size: 0;
+    }
+
     header .header-wrapper i {
         font-size: 12vw;
     }
