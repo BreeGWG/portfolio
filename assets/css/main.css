@@ -4,11 +4,13 @@ body {
     height: auto;
     min-height: 1475px;
 }
+
 /* Start  Header */
 .header-wrapper {
     min-height: 100px;
     margin: 10px 0;
-    font-size: 0; /*Account for html inline white space*/
+    font-size: 0;
+    /*Account for html inline white space*/
 }
 
 .header-frame {
@@ -66,7 +68,7 @@ main {
 }
 
 .hero {
-    background: no-repeat 100%/100% url('../images/coding.jpg');
+    background: no-repeat 100%/100% url(../images/coding.jpg);
     position: relative;
     background-size: cover;
 }
@@ -139,7 +141,6 @@ main {
 .card footer {
     background: initial;
 }
-
 /* End Main Section */
 
 /* Start Footer */
@@ -263,7 +264,7 @@ footer {
     }
 }
 
-/*responsive mobile view */
+/*Mobile View */
 @media only screen and (max-width: 575px) {
     .header-right {
         width: 75%;
@@ -297,23 +298,18 @@ footer {
     .header-wrapper i {
         font-size: 12vw;
     }
-
     .header-right h1 {
         font-size: x-large;
     }
-    
     .header-right h5 {
         font-size: large;
     }
-    
     .card {
         width: 100%;
         display: block;
     }
-
     .social-link {
         margin: 0;
     }
-
 }
 /* End Responsive */
