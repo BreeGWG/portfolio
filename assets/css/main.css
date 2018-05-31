@@ -5,20 +5,20 @@ body {
     min-height: 1450px;
 }
 /* Start  Header */
-header .header-wrapper {
+.header-wrapper {
     min-height: 100px;
     margin: 10px 0;
     font-size: 0; /*Account for html inline white space*/
 }
 
-header div.header-frame {
+.header-frame {
     border-bottom: 3px solid #7d97ad;
     padding: 25px 0;
     width: 100%;
 }
 
-header .header-left,
-header .header-right {
+.header-left,
+.header-right {
     width: 50%;
     height: 100%;
     display: inline-block;
@@ -28,22 +28,22 @@ header .header-right {
     margin: 0;
 }
 
-header .header-left .logo {
+.header-left .logo {
     min-height: 100px;
     padding-left: 0;
 }
 
-header .header-wrapper i {
+.header-wrapper i {
     font-size: 5vw;
     color: #02b3e4
 }
 
-header .header-right {
+.header-right {
     text-align: right;
     padding-right: 0;
 }
 
-header .header-right h1 {
+.header-right h1 {
     font-size: 3.2rem;
 }
 /* End Header */
@@ -183,24 +183,24 @@ footer .social-link {
     section.bottom .showcase {
         text-align: center;
     }
-    header .header-wrapper i {
+    .header-wrapper i {
         font-size: 8vw;
     }
 }
 
 /* Tablet View */
 @media only screen and (max-width: 991px) {
-    header div.header-wrapper {
+    .header-wrapper {
         border-bottom: 2px solid #7d97ad;
     }
-    header .header-wrapper i {
+    .header-wrapper i {
         font-size: 10vw;
     }
-    header div.header-frame {
+    .header-frame {
         border: none;
         padding-bottom: 10px;
     }
-    header .header-right h1 {
+    .header-right h1 {
         font-size: 2.0rem;
         text-align: right;
     }
@@ -265,10 +265,10 @@ footer .social-link {
 
 /*responsive mobile view */
 @media only screen and (max-width: 575px) {
-    header .header-right {
+    .header-right {
         width: 75%;
     }
-    header .header-left {
+    .header-left {
         width: 25%;
         padding-left: 5px;
         padding-top: 1px;
@@ -294,14 +294,14 @@ footer .social-link {
 }
 
 @media only screen and (max-width: 378px) {
-    header .header-wrapper i {
+    .header-wrapper i {
         font-size: 12vw;
     }
 
-    header .header-right h1 {
+    .header-right h1 {
         font-size: x-large;
     }
-    header .header-right h5 {
+    .header-right h5 {
         font-size: large;
     }
     
