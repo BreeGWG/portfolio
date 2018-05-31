@@ -7,14 +7,13 @@ body {
 /* Start  Header */
 header .header-wrapper {
     min-height: 100px;
-    margin: 10px 15px;
-    font-size: 0;
-    /*Account for html inline white space*/
+    margin: 10px 0;
+    font-size: 0; /*Account for html inline white space*/
 }
 
 header div.header-frame {
     border-bottom: 3px solid #7d97ad;
-    padding-bottom: 25px;
+    padding: 25px 0;
     width: 100%;
 }
 
@@ -31,6 +30,7 @@ header .header-right {
 
 header .header-left .logo {
     min-height: 100px;
+    padding-left: 0;
 }
 
 header .header-wrapper i {
@@ -40,6 +40,7 @@ header .header-wrapper i {
 
 header .header-right {
     text-align: right;
+    padding-right: 0;
 }
 
 header .header-right h1 {
@@ -182,9 +183,9 @@ footer .social-link {
     section.bottom .showcase {
         text-align: center;
     }
-    /* header .header-right h1 {
-        text-align: center;
-    } */
+    header .header-wrapper i {
+        font-size: 8vw;
+    }
 }
 
 /* Tablet View */
@@ -193,7 +194,7 @@ footer .social-link {
         border-bottom: 2px solid #7d97ad;
     }
     header .header-wrapper i {
-        font-size: 8vw;
+        font-size: 10vw;
     }
     header div.header-frame {
         border: none;
@@ -270,7 +271,7 @@ footer .social-link {
     header .header-left {
         width: 25%;
         padding-left: 5px;
-        padding-top: 10px;
+        padding-top: 1px;
     }
     article.card {
         padding-top: 0;
@@ -293,14 +294,17 @@ footer .social-link {
 }
 
 @media only screen and (max-width: 378px) {
-    header .header-wrapper {
-        margin: 10px 0;
-        font-size: 0;
-    }
-
     header .header-wrapper i {
         font-size: 12vw;
     }
+
+    header .header-right h1 {
+        font-size: x-large;
+    }
+    header .header-right h5 {
+        font-size: large;
+    }
+    
     article.card {
         width: 100%;
         display: block;
